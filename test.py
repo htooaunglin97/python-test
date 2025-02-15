@@ -13,16 +13,18 @@ age = 1406000000 / 60 / 60 / 24 / 365
 print(round(age))
 
 #3
-result = [0,0];
 def compare(a ,b):
+  result = [0,0];
   for i in range(0, 3):
     if(a[i] > b[i]):
        result[0] += 1
     elif(a[i] < b[i]):
        result[1] += 1
+  
+  return result
 
-compare([5, 6, 7], [3, 8, 8])
-print(result)
+
+print('Compare result:', compare([1, 5, 4], [1, 5, 8]))
   
 
 #4
